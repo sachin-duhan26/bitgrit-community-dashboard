@@ -1,6 +1,6 @@
 <div class="wrapper">
     <!-- Sidebar -->
-    <nav id="sidebar" class="d-flex flex-column justify-content-around align-items-center">
+    <nav id="sidebar" class="d-flex flex-column justify-content-around align-items-center bg-white">
         <h6><a routerLink="/">Logo</a></h6>
         <div>
             <div *ngFor="let item of icons" class="py-3">
@@ -16,7 +16,7 @@
         <p class="small-font-size">{{language | titlecase}}</p>
     </nav>
     <!-- Page Content -->
-    <div id="content" class="container">
+    <div id="content">
         <router-outlet></router-outlet>
     </div>
 </div>
