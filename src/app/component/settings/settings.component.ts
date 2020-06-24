@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from 'src/app/service/header.service';
 
 @Component({
     selector: 'app-settings',
@@ -8,8 +7,6 @@ import { HeaderService } from 'src/app/service/header.service';
 })
 
 export class SettingsComponent implements OnInit {
-    constructor(private _headerService: HeaderService) { }
     ngOnInit() {
-        this._headerService.update_header_status(false);
     }
 }
