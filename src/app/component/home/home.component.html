@@ -1,2 +1,32 @@
 <app-covid-report-cards></app-covid-report-cards>
-<h5>{{display | titlecase}} COVID-19 Cases</h5>
+<div class="bg-white rounded-lg row py-3">
+    <!--map view-->
+    <div class="col-sm-12 col-md-7">
+        <div class="col-sm-12">
+            <div class="row">
+                <h6 class="col-sm-6">{{display | titlecase}} COVID-19 Cases</h6>
+                <div class="col-sm-6">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 mt-3">
+            <img src="/assets/map.png" alt="map image" class="img-fluid rounded" />
+        </div>
+    </div>
+    <!-- side list for countries-->
+    <div class="col-sm-12 col-md-5">
+        <h6 class="col-sm-12">Top Countries</h6>
+        <div class="pr-3 mt-4">
+            <div class="border px-3 py-2 row mb-2 rounded-lg" *ngFor="let item of country_list">
+                <div class="col-sm-2 border rounded-circle p-2">
+                    <div class="bg-light rounded-circle p-3">{{item.stats}}</div>
+                </div>
+                <div class="col-sm-10 pt-3 pb-0">
+                    <strong>{{item.title | titlecase}}</strong>
+                    <img class="pl-2 transform-arrow" style="transform: rotate(-90deg)" src="/assets/icons/arrow.svg" />
+                    <p class="small-font-size">{{display | titlecase}} - {{item.active_cases}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-covid-report-cards',
-    templateUrl: './covid-report-cards.component.html',
-    styleUrls: ['./covid-report-cards.component.css']
+    templateUrl: './covid-report-cards.component.html'
 })
 export class CovidReportCardsComponent implements OnInit {
 
