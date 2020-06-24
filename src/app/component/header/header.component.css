@@ -36,3 +36,7 @@
 .language-content {
     font-size: 12px;
 }
+
+.theme-icon {
+    transform: rotateY(180deg);
+}

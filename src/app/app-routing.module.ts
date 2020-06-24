@@ -14,7 +14,8 @@ const routes: Routes = [
             { path: 'theme', component: ThemeSetterComponent },
             { path: 'language', component: SettingsComponent },
         ]
-    }
+    },
+    { path: '**', redirectTo: ''}
 ];
 
 @NgModule({
