@@ -7,7 +7,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { HomeComponent } from './component/home/home.component';
 import { SettingsComponent } from './component/settings/settings.component';
-import { ThemeSetterComponent } from './component/theme-setter/theme-setter.component';
+import { CovidReportCardsComponent } from './component/covid-report-cards/covid-report-cards.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { ThemeSetterComponent } from './component/theme-setter/theme-setter.comp
     AboutUsComponent,
     HomeComponent,
     SettingsComponent,
-    ThemeSetterComponent
+    CovidReportCardsComponent
   ],
   imports: [
     BrowserModule,

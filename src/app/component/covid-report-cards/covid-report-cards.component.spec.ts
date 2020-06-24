@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ThemeSetterComponent } from './theme-setter.component';
+import { CovidReportCardsComponent } from './covid-report-cards.component';
 
-describe('ThemeSetterComponent', () => {
-  let component: ThemeSetterComponent;
-  let fixture: ComponentFixture<ThemeSetterComponent>;
+describe('CovidReportCardsComponent', () => {
+  let component: CovidReportCardsComponent;
+  let fixture: ComponentFixture<CovidReportCardsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ThemeSetterComponent ]
+      declarations: [ CovidReportCardsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ThemeSetterComponent);
+    fixture = TestBed.createComponent(CovidReportCardsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
