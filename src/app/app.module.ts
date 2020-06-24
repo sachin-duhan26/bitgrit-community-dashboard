@@ -7,7 +7,6 @@ import { HeaderComponent } from './component/header/header.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { HomeComponent } from './component/home/home.component';
 import { SettingsComponent } from './component/settings/settings.component';
-import { CovidReportCardsComponent } from './component/covid-report-cards/covid-report-cards.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { CovidReportCardsComponent } from './component/covid-report-cards/covid-
     AboutUsComponent,
     HomeComponent,
     SettingsComponent,
-    CovidReportCardsComponent
   ],
   imports: [
     BrowserModule,
