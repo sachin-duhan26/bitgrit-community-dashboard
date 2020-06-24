@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    position: fixed;
+    min-width: 70px;
+    max-width: 70px;
+    top: 20px;
+    left: 20px;
+    min-height: 94%;
+    border: solid 1px #D3D3D3;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -100px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -100px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+.language-content {
+    font-size: 12px;
+}
