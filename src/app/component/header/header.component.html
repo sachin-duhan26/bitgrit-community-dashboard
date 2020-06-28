@@ -1,5 +1,20 @@
+<!-- navbar for smaller screens -->
+<nav class="navbar navbar-light d-lg-none justify-content-between">
+    <a routerLink="/" class="nav-brand pl-3">Logo</a>
+    <div class="d-flex">
+        <div *ngFor="let item of icons" class="p-md-3 p-2 py-3">
+            <a [routerLink]="item.url">
+                <img class="img-fluid circle rounded pointer" [src]="item.title">
+            </a>
+        </div>
+        <div class="py-3 p-2 pr-md-5">
+            <img (click)="switch_theme()" class="img-fluid circle rounded pointer theme-icon" src="/assets/icons/moon.svg">
+        </div>
+    </div>
+</nav>
+
 <div class="wrapper">
-    <!-- Sidebar -->
+    <!-- Sidebar for large screens-->
     <nav id="sidebar" class="d-flex flex-column justify-content-around align-items-center bg-white">
         <h6><a routerLink="/">Logo</a></h6>
         <div>
