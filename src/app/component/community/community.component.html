@@ -1,0 +1,25 @@
+<div class="my-2 d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <h6 class="pt-2">Bitgrit Community Distribution</h6>
+    <div class="pr-2 m-sm-0 p-sm-0 d-flex justify-content-between">
+        <div class="mx-2 px-3 py-1 animated fadeIn rounded-lg bg-white"><strong>Last Survey</strong> - April 2020</div>
+        <div class="mx-2 px-3 py-1 animated fadeIn rounded-lg bg-white"><strong>Total Responses</strong> - 15,000</div>
+        <div class="mx-2 px-3 py-1 animated fadeIn rounded-lg bg-white"><strong>CV Available</strong> - 12,000</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 p-3 animated fadeIn">
+        <div class="bg-white rounded-lg p-3">
+            <doughnut-chart></doughnut-chart>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 p-3 pl-2 animated fadeIn">
+        <div class="bg-white rounded-lg p-3">
+            <pie-chart [colors]="community_colors" [labels]="community_labels" [data]="community_data"></pie-chart>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6 p-3 animated fadeIn">
+        <div class="bg-white rounded-lg p-3">
+            <pie-chart [colors]="gender_colors" [labels]="gender_labels" [data]="gender_data"></pie-chart>
+        </div>
+    </div>
+</div>

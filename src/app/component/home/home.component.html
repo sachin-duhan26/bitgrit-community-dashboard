@@ -1,5 +1,5 @@
 <div class="d-flex flex-row justify-content-between flex-wrap mb-3">
-    <div *ngFor="let item of header_cards" (click)="card_navigator(item.title)" class="d-flex flex-column justify-content-between align-items-center rounded-lg p-4 py-2 m-2 mx-2 mx-lg-0 pointer" [class.shadow]="item.active" [style.background-color]="item.background_color">
+    <div *ngFor="let item of header_cards" (click)="card_navigator(item.title)" class="animated fadeIn d-flex flex-column justify-content-between align-items-center rounded-lg p-4 py-2 m-2 mx-2 mx-lg-0 pointer" [class.shadow]="item.active" [style.background-color]="item.background_color">
         <h6 class="pt-3">{{item.title | titlecase}}</h6>
         <p class="small-font-size">{{item.value}}</p>
     </div>
@@ -7,23 +7,13 @@
 
 <div class="bg-white rounded-lg row py-3">
     <!--map view-->
-    <div class="col-sm-12 col-md-7">
-        <div class="col-sm-12">
-            <div class="row">
-                <h6 class="col-sm-6">{{display | titlecase}} COVID-19 Cases</h6>
-                <div class="col-sm-6">
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 mt-3">
-            <img src="/assets/world.svg" alt="map image" class="img-fluid rounded" />
-        </div>
+    <div class="col-sm-12 col-md-7 animated fadeIn slow">
+        <img src="/assets/world.svg" alt="map image" class="img-fluid rounded mt-2" />
     </div>
     <!-- side list for countries-->
     <div class="col-sm-12 col-md-5">
-        <h6 class="col-sm-12">Top Countries</h6>
-        <div class="pr-3 mt-4">
-            <div class="border px-3 py-2 d-flex mb-2 rounded-lg" *ngFor="let item of country_list">
+        <div class="pr-3 mt-3">
+            <div class="border px-3 py-2 d-flex mb-2 rounded-lg animated fadeIn slow" *ngFor="let item of country_list">
                 <div class="border rounded-circle p-2" style="width: 75px">
                     <div class="rounded-circle p-3" [style.background-color]="style_color">{{item.stats}}</div>
                 </div>

@@ -15,20 +15,20 @@ export class HomeComponent implements OnInit {
     ) { }
 
     public sub;
-    public style_color: string = "#ffe0b2";
+    public style_color: string = "#d1c4e9";
     public display: string;
 
     ngOnInit() {
         this._headerService.update_header_status(true);
         this.sub = this.route.queryParams
-            .subscribe(params => this.display = params['display'] || "confirmed");
+            .subscribe(params => this.display = params['display'] || "Data Science");
     }
 
     private _country_list: Array<Country> = [
-        { title: "China", active_cases: '81.2K', stats: "40%" },
-        { title: "Italy", active_cases: '53.1K', stats: "17%" },
+        { title: "India", active_cases: '81.2K', stats: "40%" },
+        { title: "Japan", active_cases: '53.1K', stats: "17%" },
         { title: "USA", active_cases: '17.8K', stats: "9%" },
-        { title: "Spain", active_cases: '8.02K', stats: "4%" },
+        { title: "Europe", active_cases: '8.02K', stats: "4%" },
     ]
 
     get country_list(): Array<Country> {
@@ -39,13 +39,13 @@ export class HomeComponent implements OnInit {
     // "value" needs to updated as per the data from backend!
     // active is used for shadow in front-end!
     header_cards: Array<{ background_color: string, active: boolean, title: string, value: string }> = [
-        { background_color: "#ffe0b2", active: false, title: 'confirmed', value: "89,83,023" },
-        { background_color: "#ffcdd2", active: false, title: 'active', value: "21,323" },
-        { background_color: "#e0f2f1", active: false, title: 'recovered', value: "23,289" },
-        { background_color: "#cfd8dc", active: false, title: 'deaths', value: "12,133" },
-        { background_color: "#bbdefb", active: false, title: 'tested', value: "92,12,323" },
-        { background_color: "#f9fbe7", active: false, title: 'critical', value: "12,123" },
-        { background_color: "#b3e5fc", active: false, title: 'death rate', value: "89%" },
+        { background_color: "#d1c4e9", active: false, title: 'Data Science', value: "89,83,023" },
+        { background_color: "#ffcdd2", active: false, title: 'Artificail Intellgence', value: "21,323" },
+        { background_color: "#eeff41", active: false, title: 'Computer Vision', value: "23,289" },
+        { background_color: "#ff8a65", active: false, title: 'Data Analytics', value: "12,133" },
+        { background_color: "#90caf9", active: false, title: 'Deep Learning', value: "92,12,323" },
+        { background_color: "#b1bace", active: false, title: 'Data Visualization', value: "12,123" },
+        // { background_color: "#ffd54f", active: false, title: 'death rate', value: "89%" },
     ]
 
     card_navigator(title: string): void {

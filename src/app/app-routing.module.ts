@@ -5,15 +5,18 @@ import { HomeComponent } from './component/home/home.component'
 import { AboutUsComponent } from './component/about-us/about-us.component'
 import { SettingsComponent } from './component/settings/settings.component'
 import { HeaderComponent } from "./component/header/header.component";
+import { CommunityComponent } from './component/community/community.component';
+
 const routes: Routes = [
     {
         path: '', component: HeaderComponent, children: [
             { path: '', component: HomeComponent },
             { path: 'about', component: AboutUsComponent },
             { path: 'language', component: SettingsComponent },
+            { path: 'community', component: CommunityComponent },
         ]
     },
-    { path: '**', redirectTo: ''}
+    { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

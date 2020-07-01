@@ -7,31 +7,35 @@
                 <img class="img-fluid circle rounded pointer" [src]="item.title">
             </a>
         </div>
-        <div class="py-3 p-2 pr-md-5">
+        <!-- <div class="py-3 p-2 pr-md-5">
             <img (click)="switch_theme()" class="img-fluid circle rounded pointer theme-icon" src="/assets/icons/moon.svg">
-        </div>
+        </div> -->
     </div>
 </nav>
 
 <div class="wrapper">
-    <!-- Sidebar for large screens-->
+    <!-- Sidebar for large screens | remain hidden on large screens -->
     <nav id="sidebar" class="d-flex flex-column justify-content-around align-items-center bg-white">
-        <h6><a routerLink="/">Logo</a></h6>
+        <h6>
+            <a routerLink="/">
+                <img src="/assets/logo.jpeg" alt="Logo" class="img-fluid rounded-circle pointer">
+            </a>
+        </h6>
         <div>
             <div *ngFor="let item of icons" class="py-3">
                 <a [routerLink]="item.url">
-                    <img class="img-fluid circle rounded pointer" [src]="item.title">
+                    <img class="pointer" [src]="item.title">
                 </a>
             </div>
             <!--theme update here! this is not a route-->
-            <div class="py-3 pl-1">
+            <!-- <div class="py-3 pl-1">
                 <img (click)="switch_theme()" class="img-fluid circle rounded pointer theme-icon" src="/assets/icons/moon.svg">
-            </div>
+            </div> -->
         </div>
         <p class="small-font-size">{{language | titlecase}}</p>
     </nav>
-    <!-- Page Content -->
-    <div id="content">
+    <!-- Main Content here!-->
+    <div id="content" class="animated fadeIn">
         <router-outlet></router-outlet>
     </div>
 </div>

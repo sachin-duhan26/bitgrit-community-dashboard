@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
 
     icons: Array<{ title: string, url: string }> = [
         { url: '/', title: '/assets/icons/dashboard.svg' },
+        { url: '/community', title: '/assets/icons/group.svg'},
         { url: '/about', title: '/assets/icons/help_outline.svg' },
         { url: '/language', title: '/assets/icons/language.svg' },
     ]
