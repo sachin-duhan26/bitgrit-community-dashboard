@@ -32,20 +32,18 @@ export class HomeComponent implements OnInit {
     ]
 
     get country_list(): Array<Country> {
-        this.header_cards.forEach(card => { if (this.display == card.title) this.style_color = card.background_color; });
         return this._country_list
     }
 
     // "value" needs to updated as per the data from backend!
     // active is used for shadow in front-end!
-    header_cards: Array<{ background_color: string, active: boolean, title: string, value: string }> = [
-        { background_color: "#d1c4e9", active: false, title: 'Data Science', value: "89,83,023" },
-        { background_color: "#ffcdd2", active: false, title: 'Artificail Intellgence', value: "21,323" },
-        { background_color: "#eeff41", active: false, title: 'Computer Vision', value: "23,289" },
-        { background_color: "#ff8a65", active: false, title: 'Data Analytics', value: "12,133" },
-        { background_color: "#90caf9", active: false, title: 'Deep Learning', value: "92,12,323" },
-        { background_color: "#b1bace", active: false, title: 'Data Visualization', value: "12,123" },
-        // { background_color: "#ffd54f", active: false, title: 'death rate', value: "89%" },
+    header_cards: Array<{ active: boolean, title: string, value: string }> = [
+        { active: false, title: 'Data Science', value: "89,83,023" },
+        { active: false, title: 'Artificail Intellgence', value: "21,323" },
+        { active: false, title: 'Computer Vision', value: "23,289" },
+        { active: false, title: 'Data Analytics', value: "12,133" },
+        { active: false, title: 'Deep Learning', value: "92,12,323" },
+        { active: false, title: 'Data Visualization', value: "12,123" },
     ]
 
     card_navigator(title: string): void {

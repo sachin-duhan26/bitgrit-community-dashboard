@@ -1,5 +1,5 @@
 <div class="d-flex flex-row justify-content-between flex-wrap mb-3">
-    <div *ngFor="let item of header_cards" (click)="card_navigator(item.title)" class="animated fadeIn d-flex flex-column justify-content-between align-items-center rounded-lg p-4 py-2 m-2 mx-2 mx-lg-0 pointer" [class.shadow]="item.active" [style.background-color]="item.background_color">
+    <div *ngFor="let item of header_cards" (click)="card_navigator(item.title)" class="animated fadeIn d-flex text-white flex-column justify-content-between align-items-center rounded-lg p-4 py-2 m-2 mx-2 mx-lg-0 pointer" [class.shadow]="item.active" [style.background-color]="'#724b98'">
         <h6 class="pt-3">{{item.title | titlecase}}</h6>
         <p class="small-font-size">{{item.value}}</p>
     </div>
@@ -14,11 +14,11 @@
     <div class="col-sm-12 col-md-5">
         <div class="pr-3 mt-3">
             <div class="border px-3 py-2 d-flex mb-2 rounded-lg animated fadeIn slow" *ngFor="let item of country_list">
-                <div class="border rounded-circle p-2" style="width: 75px">
-                    <div class="rounded-circle p-3" [style.background-color]="style_color">{{item.stats}}</div>
+                <div class="border rounded-circle p-2 shadow-sm" style="width: 75px">
+                    <div class="rounded-circle p-3 bg-light">{{item.stats}}</div>
                 </div>
                 <div class="pt-3 ml-3 pb-0">
-                    <strong>{{item.title | titlecase}}</strong>
+                    <strong style="color: #2f2552">{{item.title | titlecase}}</strong>
                     <img class="pl-2 transform-arrow" style="transform: rotate(-90deg)" src="/assets/icons/arrow.svg" />
                     <p class="small-font-size">{{display | titlecase}} - {{item.active_cases}}</p>
                 </div>

@@ -1,5 +1,5 @@
 <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-4 h-75">
-    <button *ngFor="let item of supported_languages" class="btn btn-link animated fadeIn slow" [class.btn-primary]="active_langauge == item.title">
+    <button (click)="update_language(item.title)" *ngFor="let item of supported_languages" class="btn btn-link animated fadeIn slow m-3" [class.btn-primary]="active_langauge == item.title">
         {{item.title | titlecase}}
     </button>
 </div>
