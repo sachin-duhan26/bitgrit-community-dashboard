@@ -1,9 +1,9 @@
-# CovidDashboard
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+# bitgrit Community Dashboard
+Following is the COVID dashboard designed for bitgrit.inc 
 
 ## Preview
 <img src="preview.png" width="auto" height="auto"/>
+
 
 ## Development server
 
